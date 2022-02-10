@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Gazer</title>
+    <script src="https://webgazer.cs.brown.edu/webgazer.js" defer></script>
+    <!-- <script src="./webgazer.js" defer></script> -->
+
+    <script src="app.js" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .parent {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color: rgb(240, 231, 240); */
+            height: 100vh;
+        }
+        
+        .disFlex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            color: rgb(93, 157, 179);
+        }
+        
+        .childBorder {
+            min-height: 210px;
+            min-width: 270px;
+            width: 10vw;
+            height: 10vh;
+            border: 2px solid transparent;
+            border-radius: 20px;
+            margin: 70px 60px;
+            margin-bottom: 15px;
+        }
+        
+        .firstChild {
+            /* background-color: purple; */
+            border: 2px solid saddlebrown;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .secondChild {
+            /* background-color: red; */
+            border: 2px solid saddlebrown;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .thirdChild {
+            /* background-color: blue; */
+            border: 2px solid saddlebrown;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .fourthChild {
+            /* background-color: yellow; */
+            border: 2px solid saddlebrown;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .callibration {
+            border: 2px solid saddlebrown;
+            padding: 30px;
+            border-radius: 20px;
+            border-style: dashed;
+        }
+        
+        @media screen and (max-width:750px) {
+            .callibration {
+                padding: none;
+                border: none
+            }
+            .childBorder {
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="callibration">
+            <div class="disFlex">
+                <!-- <div class="childBorder firstChild" id="firstChild"> -->
+                    <div class="childBorder firstChild" >
+                    <h1 id="firstChild">X</h1>
+                </div>
+                <!-- <div class="childBorder secondChild" id="secondChild"> -->
+                <div class="childBorder secondChild">
+                    <h1 id="secondChild" >X</h1>
+
+                </div>
+            </div>
+            <div class="disFlex">
+                <!-- <div class="childBorder thirdChild" id="thirdChild"> -->
+                <div class="childBorder thirdChild">
+                    <h1 id="thirdChild">X</h1>
+                </div>
+                <!-- <div class="childBorder fourthChild" id="fourthChild"> -->
+                <div class="childBorder fourthChild">
+                    <h1 id="fourthChild">X</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
