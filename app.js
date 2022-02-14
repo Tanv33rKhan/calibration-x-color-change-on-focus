@@ -55,6 +55,13 @@ webgazer
   .setGazeListener((data) => {
     // with Range
     // if (
+    // webgazer.removeMouseEventListeners(
+    //   // (result) => {
+    // //   // console.log(result);
+    // //   // return "";
+    // // }
+    // );
+    webgazer.removeMouseEventListeners();
     //   firstXRange.includes(data?.x.toFixed(0)) ||
     //   firstYRange.includes(data?.y.toFixed(0))
     //   // firstxl == data?.x.toFixed(0) ||
